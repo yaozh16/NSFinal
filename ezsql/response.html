@@ -1,0 +1,88 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>sql_injection</title>
+  </head>
+
+  <body>
+    <form method="get">
+      <input type="text" name="inject" value="1">
+      <input type="submit">
+    </form>
+
+    <pre>array(2) {
+  [0]=>
+  string(1) "1"
+  [1]=>
+  string(37) "PHP is the best programming language!"
+}
+<br>array(2) {
+  [0]=>
+  string(1) "2"
+  [1]=>
+  string(28) "Vim is the best text editor!"
+}
+<br>array(2) {
+  [0]=>
+  string(1) "3"
+  [1]=>
+  string(36) "Some hint for you after this one ..."
+}
+<br>array(2) {
+  [0]=>
+  string(1) "4"
+  [1]=>
+  string(33) "The hint is not here. Go further."
+}
+<br>array(2) {
+  [0]=>
+  string(1) "5"
+  [1]=>
+  string(64) "You have to go MUCH further, but bruteforce won't get you there."
+}
+<br>array(2) {
+  [0]=>
+  string(6) "114514"
+  [1]=>
+  string(52) "https://www.php.net/manual/en/mysqli.multi-query.php"
+}
+<br><hr>array(1) {
+  [0]=>
+  string(18) "information_schema"
+}
+<br>array(1) {
+  [0]=>
+  string(5) "mysql"
+}
+<br>array(1) {
+  [0]=>
+  string(18) "performance_schema"
+}
+<br>array(1) {
+  [0]=>
+  string(13) "sql_injection"
+}
+<br>array(1) {
+  [0]=>
+  string(4) "test"
+}
+<br>array(1) {
+  [0]=>
+  string(8) "training"
+}
+<br><hr>array(1) {
+  [0]=>
+  string(2) "42"
+}
+<br>array(1) {
+  [0]=>
+  string(6) "quotes"
+}
+<br><hr>array(1) {
+  [0]=>
+  string(42) "flag{a202b12c-4b4a-446c-b544-b007584d2c98}"
+}
+<br><hr></pre>
+  </body>
+</html>
