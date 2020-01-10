@@ -19,6 +19,6 @@ def decrypt_md5(md5_value):
                 print(md5_value + '==>' + item)
                 return item
 if __name__ == "__main__":
-    md5_value = 'fffd'
+    md5_value = '21d9'
     start = time()
     result = decrypt_md5(md5_value)

